@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Guitar.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource backgound}">
+        <Hub Header="Star" HorizontalAlignment="Left" Height="262" Margin="41,65,0,0" VerticalAlignment="Top" Width="309" FontFamily="Comic Sans MS">
+            <HubSection Header="Simply a Smart Guitar" FontFamily="Comic Sans MS">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="HubSection 1">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="506" Margin="14,90,0,0" VerticalAlignment="Top" Width="376" Source="Assets/guitar.png"/>
+        <Button x:Name="signInButton" Content="Sign In" HorizontalAlignment="Left" Height="60" Margin="255,426,0,0" VerticalAlignment="Top" Width="95" Click="signInButton_Click"/>
+        <Button x:Name="signUpButton" Content="Sign Up" HorizontalAlignment="Left" Height="60" Margin="255,492,0,0" VerticalAlignment="Top" Width="95" Click="signUpButton_Click"/>
+    </Grid>
+</Page>

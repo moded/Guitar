@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="Guitar.signUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource backgound}">
+        <Hub Header="New User" HorizontalAlignment="Left" Height="262" Margin="33,65,0,0" VerticalAlignment="Top" Width="359" FontFamily="Comic Sans MS" FontSize="8">
+        </Hub>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Margin="82,177,0,0" TextWrapping="Wrap" PlaceholderText="Your Name" VerticalAlignment="Top" Width="254"/>
+        <PasswordBox x:Name="confirmPass" HorizontalAlignment="Left" Margin="82,311,0,0"  PlaceholderText="Confirm Password" VerticalAlignment="Top" Width="254"/>
+        <TextBlock x:Name="PicText" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,381,0,0" TextWrapping="Wrap" Text="Select Your Profile Pic" VerticalAlignment="Top" FontSize="23" Height="67" Width="390" Foreground="#FFFBF3F3"/>
+        <Button x:Name="signUpButton" Content="Sign Up" HorizontalAlignment="Left" Height="63" Margin="144,548,0,0" VerticalAlignment="Top" Width="68" Click="signUpButton_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left"  PlaceholderText="Password" Height="39" Margin="82,246,0,0" VerticalAlignment="Top" Width="254"/>
+        <Button x:Name="galleryButton"  HorizontalAlignment="Left" Height="124" Margin="143,421,0,0" VerticalAlignment="Top" Width="42" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="galleryButton_Click">
+            <Button.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Button.RenderTransform>
+            <Image Source="Assets/gallery2.png" />
+        </Button>
+        <Rectangle x:Name="Rack" Visibility="Collapsed" HorizontalAlignment="Left" Height="575" Margin="37,38,0,0" Stroke="Black" VerticalAlignment="Top" Width="337">
+            <Rectangle.Fill>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Assets/loonyToons/ltback.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="button_Copy"  Visibility="Collapsed" HorizontalAlignment="Left" Height="123" Margin="75,73,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy_Click">
+            <Image x:Name="img"  Source ="Assets/loonyToons/duck.gif"/>
+        </Button>
+        <Button x:Name="button_Copy0"  Visibility="Collapsed" HorizontalAlignment="Left" Height="123" Margin="227,73,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy0_Click">
+            <Image x:Name="img0" Source ="Assets/loonyToons/bugsBunny.png"/>
+        </Button>
+        <Button x:Name="button_Copy1"  Visibility="Collapsed" HorizontalAlignment="Left" Height="124" Margin="75,200,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy1_Click">
+            <Image x:Name="img1" Source ="Assets/loonyToons/lola2.png"/>
+        </Button>
+        <Button x:Name="button_Copy2" Visibility="Collapsed" HorizontalAlignment="Left" Height="124" Margin="227,200,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy2_Click">
+            <Image x:Name="img2" Source ="Assets/loonyToons/looney16.gif"/>
+        </Button>
+        <Button x:Name="button_Copy3" Visibility="Collapsed" HorizontalAlignment="Left" Height="123" Margin="75,329,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy3_Click">
+            <Image x:Name="img3" Source ="Assets/loonyToons/porky_Pig.png"/>
+        </Button>
+        <Button x:Name="button_Copy4" Visibility="Collapsed" HorizontalAlignment="Left" Height="123" Margin="227,329,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy4_Click">
+            <Image x:Name="img4" Source ="Assets/loonyToons/Roadrunner.png"/>
+        </Button>
+        <Button x:Name="button_Copy5" Visibility="Collapsed" HorizontalAlignment="Left" Height="123" Margin="75,456,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy5_Click">
+            <Image x:Name="img5" Source ="Assets/loonyToons/Sambia.gif"/>
+        </Button>
+        <Button x:Name="button_Copy6" Visibility="Collapsed" HorizontalAlignment="Left" Height="123" Margin="227,456,0,0" VerticalAlignment="Top" Width="100" Click="button_Copy6_Click">
+            <Image x:Name="img6" Source ="Assets/loonyToons/tazzT.jpg"/>
+        </Button>
+    </Grid>
+</Page>

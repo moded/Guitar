@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Guitar.settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource backgound}">
+        <Hub Header="Settings" HorizontalAlignment="Left" Height="262" Margin="61,33,-20,0" VerticalAlignment="Top" Width="359" FontFamily="Comic Sans MS" FontSize="8">
+        </Hub>
+        <TextBlock x:Name="PicText" HorizontalAlignment="Left" Margin="90,371,0,0" TextWrapping="Wrap" Text="Change Background:" VerticalAlignment="Top" FontSize="23" Height="67" Width="221" Foreground="#FFFBF3F3"/>
+        <Button x:Name="backgroundButton" Content="Change" HorizontalAlignment="Left" Height="51" Margin="257,404,0,0" VerticalAlignment="Top" Width="68" Click="backgroundButton_Click" />
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left"  PlaceholderText="Enter New Password" Height="39" Margin="78,170,0,0" VerticalAlignment="Top" Width="254" PasswordChanged="passwordBox_PasswordChanged"/>
+        <TextBlock x:Name="PicText_Copy" HorizontalAlignment="Left" Margin="76,119,0,0" TextWrapping="Wrap" Text="Update Details:" VerticalAlignment="Top" FontSize="23" Height="67" Width="221" Foreground="#FFFBF3F3"/>
+        <Button x:Name="updateButton" Content="Update" HorizontalAlignment="Left" Height="63" Margin="152,290,0,0" VerticalAlignment="Top" Width="68" Click="updateButton_Click"/>
+        <TextBlock x:Name="PicText_Copy1" HorizontalAlignment="Left" Margin="69,481,0,0" TextWrapping="Wrap" Text="Change Led Colour Theme:" VerticalAlignment="Top" FontSize="23" Height="67" Width="291" Foreground="#FFFBF3F3"/>
+        <ComboBox x:Name="backgroundComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" Margin="38,404,0,0" SelectionChanged="backgroundComboBox_SelectionChanged"/>
+        <ComboBox x:Name="ledTehmeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" Margin="38,522,0,0" SelectionChanged="ledTehmeComboBox_SelectionChanged"/>
+        <Button x:Name="ledThemeButton" Content="Change" HorizontalAlignment="Left" Height="51" Margin="257,522,0,0" VerticalAlignment="Top" Width="68" Click="ledThemeButton_Click" />
+    </Grid>
+</Page>

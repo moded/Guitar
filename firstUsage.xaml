@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="Guitar.firstUsage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Rectangle x:Name="msgRac" HorizontalAlignment="Center" Height="657.354" Margin="-19.136,2.267,-10.036,-19.621" Stroke="Black" VerticalAlignment="Top" Width="429.172" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="180.143"/>
+            </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF01204C" Offset="0.611"/>
+                    <GradientStop Color="Black" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="msgHeader"  TextAlignment="Center" HorizontalAlignment="Left" Height="231" Margin="0,189,0,0" TextWrapping="Wrap" FontFamily="comic sans ms" FontSize="26" VerticalAlignment="Top" Width="390" >
+        	<Run Text="Welcome To STAR!!"/>
+        	<LineBreak/>
+            <LineBreak/>
+            <Run Text="Youre going to do great    things with STAR."></Run>
+            <LineBreak/>
+                        <Run Text="click next to see how"></Run>
+        	<Run/>
+        </TextBlock>
+        <Image x:Name="msgHdrImg" Source="Assets/Star-logo.jpg" Margin="-11,-220,-4,247"/>
+        <Ellipse x:Name="el1" HorizontalAlignment="Left" Height="15" Margin="141,528,0,0" Stroke="White" VerticalAlignment="Top" Width="15">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="el2" HorizontalAlignment="Left" Height="15" Margin="161,528,0,0" Stroke="white" VerticalAlignment="Top" Width="15">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop x:Name="el2Bgd" Color="Transparent" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="el3" HorizontalAlignment="Left" Height="15" Margin="181,528,0,0" Stroke="white" VerticalAlignment="Top" Width="15">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop x:Name="el3Bgd" Color="Transparent" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="el4" HorizontalAlignment="Left" Height="15" Margin="201,528,0,0" Stroke="white" VerticalAlignment="Top" Width="15">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop x:Name="el4Bgd" Color="Transparent" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Button x:Name="msgNextButton" Content="Get Started" HorizontalAlignment="Left" Height="30" Margin="134,551,0,0" VerticalAlignment="Top" Width="129" Click="msgNextButton_Click" />
+        <Image x:Name="msgImgHor" HorizontalAlignment="Left" Height="179" Margin="99,328,0,0" VerticalAlignment="Top" Width="200"/>
+        <Image x:Name="msgImgVer"   HorizontalAlignment="Center" Height="220" Margin="136,287,139,0" VerticalAlignment="Top" Width="125"/>
+        <Ellipse x:Name="el5" HorizontalAlignment="Left" Height="15" Margin="221,528,0,0" Stroke="white" VerticalAlignment="Top" Width="15">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop x:Name="el4Bgd1" Color="Transparent" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="el6" HorizontalAlignment="Left" Height="15" Margin="241,528,0,0" Stroke="white" VerticalAlignment="Top" Width="15">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop x:Name="el4Bgd2" Color="Transparent" Offset="0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</Page>

@@ -1,0 +1,13 @@
+﻿<Application
+    x:Class="Guitar.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar">
+    <Application.Resources>
+        <Style x:Key="ImageStyle1" TargetType="Image"/>
+        <ImageBrush x:Key="backgound" ImageSource="/Assets/back1.jpg" Opacity="0.35" Stretch="Fill" />
+        <ImageBrush x:Key="backgound2" ImageSource="/Assets/learnbackground.jpg" Opacity=".35" Stretch="Fill" />
+        <ImageBrush x:Key="backgound3"  Stretch="Fill" />
+    </Application.Resources>
+
+</Application>

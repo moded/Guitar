@@ -1,0 +1,158 @@
+﻿<Page
+    x:Class="Guitar.songs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource backgound}">
+        <TextBlock x:Name="textBlock" FontSize="30" FontFamily="comic sans ms" HorizontalAlignment="Left" Height="46" Margin="95,26,0,0" TextWrapping="Wrap" Text="choose a Song" VerticalAlignment="Top" Width="233" />
+        <Button x:Name="button"  HorizontalAlignment="Left" Height="160" Margin="46,134,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}" Click="button_Click">
+            <Image Stretch="Fill" Source="Assets/songs/gnr.jpg"/>
+        </Button>
+
+        <Button x:Name="button_Copy" HorizontalAlignment="Left" Height="160" Margin="217,134,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}" Click="button_Copy_Click">
+            <Image Stretch="Fill" Source="Assets/songs/toyl.png"/>
+        </Button>
+
+        <Button x:Name="button_Copy1"  HorizontalAlignment="Left" Height="160" Margin="46,280,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}" Click="button_Copy1_Click">
+            <Image Stretch="Fill" Source="Assets/songs/shmulik.jpg"/>
+        </Button>
+
+        <Button x:Name="button_Copy2"  HorizontalAlignment="Left" Height="160" Margin="217,280,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}">
+            <Image Stretch="Fill" Source="Assets/songs/everyBodyHurts.jpg"/>
+        </Button>
+
+        <Button x:Name="button_Copy3"  HorizontalAlignment="Left" Height="160" Margin="46,432,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}">
+            <Image Stretch="Fill" Source="Assets/songs/knocking-on-heavens-door.jpg"/>
+        </Button>
+        <Button x:Name="button_Copy4"  HorizontalAlignment="Left" Height="160" Margin="217,432,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}">
+            <Image Stretch="Fill" Source="Assets/songs/timeofyourlife.jpg"/>
+        </Button>
+        <Rectangle x:Name ="rect" HorizontalAlignment="Left" Height="566" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="380" Visibility="Collapsed">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF070A4B" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textblock" HorizontalAlignment="Left" Height="500" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="16" Foreground="#FFFDFDFD" Visibility="Collapsed">
+        	<Run Text="F# C# B"/>
+        	<LineBreak/>
+        	<Run Text="F#    C#   B   F#"/>
+        	<LineBreak/>
+        	<Run Text="oh... yea...."/>
+        	<LineBreak/>
+        	<Run Text="F#   C#                   Abm   F#"/>
+        	<LineBreak/>
+        	<Run Text="Mama Take this badge from me      "/>
+        	<LineBreak/>
+        	<Run Text="F#      C#        B      F#"/>
+        	<LineBreak/>
+        	<Run Text="I can't use it anymore     "/>
+        	<LineBreak/>
+        	<Run Text="F#           C#              Abm    F#"/>
+        	<LineBreak/>
+        	<Run Text="It's Getting dark to dark to see      "/>
+        	<LineBreak/>
+        	<Run Text="F#              C#                 B     F#"/>
+        	<LineBreak/>
+        	<Run Text="Feels like I'm knocking on heavens door    "/>
+        	<LineBreak/>
+        	<Run Text="F#           C#                B   "/>
+        	<LineBreak/>
+        	<Run Text="Knock Knock Knockin on Heavens door"/>
+        	<LineBreak/>
+        	<Run Text="                  F# "/>
+        	<LineBreak/>
+        	<Run Text="hey  hey  hey hey hey"/>
+        	<LineBreak/>
+        	<Run Text="F#          C#                 B     F#   "/>
+        	<LineBreak/>
+        	<Run Text="Knock Knock Knockin on Heavens door  oh..."/>
+        	<LineBreak/>
+        	<Run Text="F#           C#                B   "/>
+        	<LineBreak/>
+        	<Run Text="Knock Knock Knockin on Heavens door"/>
+        	<LineBreak/>
+        	<Run Text="             F# "/>
+        	<LineBreak/>
+        	<Run Text="oh... oh... yeah"/>
+        	<LineBreak/>
+        	<Run Text="F#           C#                B   "/>
+        	<LineBreak/>
+        	<Run Text="Knock Knock Knockin on Heavens door"/>
+        	<LineBreak/>
+        	<Run Text="         F#  "/>
+        	<LineBreak/>
+        	<Run Text="hey  hey yeah"/>
+        </TextBlock>
+        <TextBlock x:Name="textblock2" HorizontalAlignment="Left" Height="500" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="16" Foreground="#FFFDFDFD" Visibility="Collapsed">
+        	<Run Text="[Intro]"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="G G Cadd9 D"/>
+        	<LineBreak/>
+        	<Run Text="G G Cadd9 D"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="[Verse]"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="G                       C                 D"/>
+        	<LineBreak/>
+        	<Run Text="Another turning point a fork stuck in the road,"/>
+        	<LineBreak/>
+        	<Run Text="G                                C                   D  "/>
+        	<LineBreak/>
+        	<Run Text="Time grabs you by the wrist, and directs you where to go"/>
+        	<LineBreak/>
+        	<Run Text="Em          D            C                 G"/>
+        	<LineBreak/>
+        	<Run Text="So make the best of this test and don't ask why"/>
+        	<LineBreak/>
+        	<Run Text="Em         D              C                 G"/>
+        	<LineBreak/>
+        	<Run Text="It's not a question but a lesson learned in time"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="[Bridge]"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="Em                    G           Em           G             "/>
+        	<LineBreak/>
+        	<Run Text="Its something unpredictable but in the end it's right"/>
+        	<LineBreak/>
+        	<Run Text="Em                 D            G "/>
+        	<LineBreak/>
+        	<Run Text="I hope you had the time of your life."/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="[Interlude]"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="G G C D"/>
+        	<LineBreak/>
+        	<Run Text="G G C D"/>
+        </TextBlock>
+
+
+    </Grid>
+</Page>

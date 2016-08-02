@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Guitar.effects"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource backgound}">
+        <TextBlock x:Name="textBlock" FontSize="30" FontFamily="comic sans ms" HorizontalAlignment="Left" Height="46" Margin="87,26,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="effects" VerticalAlignment="Top" Width="233" SelectionChanged="textBlock_SelectionChanged"/>
+        <Button x:Name="button"  HorizontalAlignment="Left" Height="159" Margin="40,174,0,0" VerticalAlignment="Top" Width="162" Click="button_Click">
+            <Image Source="Assets/lightGuitar.jpg" Stretch="Fill"/>
+        </Button>
+        <Button x:Name="button_Copy"  HorizontalAlignment="Left" Height="159" Margin="40,377,0,0" VerticalAlignment="Top" Width="162">
+            <Image Source="Assets/lightWord.jpg" Stretch="Fill"/>
+        </Button>
+        <TextBlock x:Name="lightTextBlock1" HorizontalAlignment="Left" Height="61" Margin="232,208,0,0" TextWrapping="Wrap" Text="Light Guitar" VerticalAlignment="Top" Width="168" FontSize="20"/>
+        <TextBlock x:Name="lightTextBlock2" HorizontalAlignment="Left" Height="61" Margin="232,242,0,0" TextWrapping="Wrap" Text="Light your guitar in many ways" VerticalAlignment="Top" Width="132" FontSize="15"/>
+        <TextBlock x:Name="letterTextBlock1" HorizontalAlignment="Left" Height="61" Margin="230,410,0,0" TextWrapping="Wrap" Text="Light String" VerticalAlignment="Top" Width="168" FontSize="20"/>
+        <TextBlock x:Name="letterTextBlock2" HorizontalAlignment="Left" Height="61" Margin="230,444,0,0" TextWrapping="Wrap" Text="Show your message on the guitar neck" VerticalAlignment="Top" Width="134" FontSize="15"/>
+
+
+    </Grid>
+</Page>

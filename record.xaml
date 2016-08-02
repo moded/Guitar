@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="Guitar.record"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <!-- <Grid>
+        <Hub Header="Record" HorizontalAlignment="Center" Height="262" Margin="32,60,9,0" VerticalAlignment="Top" Width="359" FontFamily="Comic Sans MS" FontSize="8"/>
+
+        <Button x:Name="recordButton" BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left"  Background="{x:Null}" Height="188" Margin="100,212,0,0" VerticalAlignment="Top" Width="202" Click="recordButton_Click">
+            <Image Source="assets/record.png"/>
+        </Button>
+        <CaptureElement x:Name="recordObject" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="153,428,0,0"/>
+    </Grid>
+    -->
+    <Grid x:Name="Output"  Background="{StaticResource backgound}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Grid.Row="0">
+            <Button x:Name="btnStartDevice3" Visibility="Collapsed" Click="btnStartDevice_Click" IsEnabled="true"  Margin="0,0,10,0">StartDevice</Button>
+            <Button x:Name="btnStartStopRecord3" Visibility="Collapsed" Click="btnStartStopRecord_Click" IsEnabled="false"  Margin="0,0,10,0">StartRecord</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Grid.Row="1">
+            <CheckBox x:Name="recordRawAudio" Visibility="Collapsed" Margin="0,0,10,0" Content="Record raw audio" />
+        </StackPanel>
+        <StackPanel Grid.Row="5" >
+            <TextBlock HorizontalAlignment='Center' Visibility="Visible" FontSize="26" VerticalAlignment='Center'  TextAlignment='Center'    Text='Captured Audio' Margin="96,0,67,0" Height="147" Width="237" />
+            <Canvas x:Name='playbackCanvas3' Width='320' Height ='240' >
+                <MediaElement  x:Name='playbackElement3'      Width="320"  Height="240" Margin="10,5,10,5"/>
+            </Canvas>
+        </StackPanel>
+        <Image Source="Assets/playStopRecord.png" Margin="87,6,60,11" Grid.RowSpan="3"/>
+        <Rectangle x:Name="stopRack" Visibility="Collapsed" Canvas.Left="116" Stroke="white" Canvas.Top="85" Width="28" Margin="102,135,270,90.333" Grid.Row="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" >
+                    <GradientStop Color="#FFD40308" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="recPlay" HorizontalAlignment="Left" Height="114" BorderBrush="Transparent" Margin="90,173,0,0" Grid.Row="2" VerticalAlignment="Top" Width="109" Click="recPlay_Click"/>
+        <Button x:Name="recRecStp2" HorizontalAlignment="Left" Height="114" BorderBrush="Transparent" Margin="217,173,0,0" Grid.Row="2" VerticalAlignment="Top" Width="109" Click="btnStartStopRecord_Click"/>
+        <Button x:Name="recRecStp" HorizontalAlignment="Left" Height="113" BorderBrush="Transparent" Margin="217,307,0,-33.333" Grid.Row="2" VerticalAlignment="Top" Width="109" Click="btnStartStopRecord_Click"/>
+        <Button x:Name="recPlay_Copy" HorizontalAlignment="Left" Height="114" BorderBrush="Transparent" Margin="90,307,0,-34.333" Grid.Row="2" VerticalAlignment="Top" Width="109" Click="recPlay_Click"/>
+        <Button x:Name="button_Copy" HorizontalAlignment="Left" Height="160" Margin="130,438,0,0" VerticalAlignment="Top" Width="160" BorderBrush="{x:Null}" Click="button_Copy_Click" Grid.Row="2">
+            <Image Stretch="Fill" Source="Assets/songs/gnr.jpg"/>
+        </Button>
+
+    </Grid>
+
+</Page>

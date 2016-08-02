@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="Guitar.welcomeMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guitar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource backgound3}">
+        <Image x:Name="image" Source="assets/gingi.jpg" HorizontalAlignment="Left" Height="500" Margin="24,166,0,-26" VerticalAlignment="Top" Width="360"/>
+        <Hub Header="Welcome" HorizontalAlignment="Center" Height="262" Margin="42,48,-1,0" VerticalAlignment="Top" Width="359" FontFamily="Comic Sans MS" FontSize="8"/>
+        <Button x:Name="settingButton" BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Background="{x:Null}" Height="100" Margin="32,221,0,0" VerticalAlignment="Top" Width="120" Click="settingButton_Click">
+            <Image Source="assets/settings.png" Width="65"/>
+        </Button>
+        <Button x:Name="messageButton" BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left"  Background="{x:Null}" Height="104" Margin="144,221,0,0" VerticalAlignment="Top" Width="119" Click="messageButton_Click">
+            <Image Source="assets/message.png" Width="65"/>
+        </Button>
+        <Button x:Name="recordButton" BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left"  Background="{x:Null}" Height="104" Margin="253,221,0,0" VerticalAlignment="Top" Width="118" Click="recordButton_Click">
+            <Image Source="assets/record.png"/>
+        </Button>
+        <Button x:Name="profileButton" BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Background="{x:Null}" Height="103" Margin="32,297,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <Image Source="assets/profile.png"/>
+        </Button>
+        <Button x:Name="learnButton" BorderBrush="Black" BorderThickness="10" HorizontalAlignment="Left" Background="{x:Null}" Height="186" Margin="144,297,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Click="learnButton_Click">
+            <StackPanel>
+                <Image Source="assets/learn2.png" Height="121" Width="83"/>
+                <TextBlock Text="Learn To Play" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="176" FontFamily="Comic Sans MS"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="effectsButton" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="10" Background="{x:Null}" Height="238" Margin="32,381,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Click="effectsButton_Click">
+            <StackPanel>
+                <Image Source="assets/effects.jpg" Height="132" Width="94"/>
+                <TextBlock Text="effects" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="72" FontFamily="Comic Sans MS"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="playSongsButton" HorizontalAlignment="Left" Background="{x:Null}" Height="164" Margin="144,456,0,0" VerticalAlignment="Top" Width="227" RenderTransformOrigin="0.5,0.5" Click="playSongsButton_Click"  CacheMode="BitmapCache" BorderBrush="Black" BorderThickness="10">
+            <Grid>
+                <StackPanel>
+                    <Grid>
+                        <TextBlock Text="Play Songs"  HorizontalAlignment="right" VerticalAlignment="Top"  Width="98" FontFamily="Comic Sans MS" Height="32" RenderTransformOrigin="0.57,-0.381" Margin="-4,-56,80,0"/>
+                        <Image x:Name="gingi" Source="assets/colorful.png"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Button>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="59" Margin="4,163,0,0" Stroke="Black" VerticalAlignment="Top" Width="390"/>
+        <TextBlock x:Name="userName" HorizontalAlignment="Left" Height="51" Margin="196,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="40" FontStyle="Italic" Width="176"/>
+        <Image x:Name="userImage"  HorizontalAlignment="Left" Height="111" Margin="78,116,0,0" VerticalAlignment="Top" Width="123"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="59" Margin="4,619,0,-38" Stroke="Black" VerticalAlignment="Top" Width="390"/>
+        <Ellipse x:Name="mailCircle" Fill="#FFE80827" HorizontalAlignment="Left" Height="33" Margin="230,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="34"/>
+        <TextBlock x:Name="unreadMsg" Foreground="White" HorizontalAlignment="Left" Height="20" Margin="147,225,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="2" VerticalAlignment="Top" FontSize="20" Width="200" />
+    </Grid>
+</Page>
